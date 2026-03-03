@@ -33,7 +33,7 @@ export default function Services() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section header */}
         <div className="text-center">
-          <p className="text-sm font-semibold uppercase tracking-widest text-amber">
+          <p className="text-sm font-semibold uppercase tracking-widest text-crimson">
             What We Do
           </p>
           <h2 className="mt-2 text-3xl font-bold text-slate-900 md:text-4xl">
@@ -53,8 +53,8 @@ export default function Services() {
               key={service.title}
               className="rounded-xl border border-slate-200 bg-white p-8 shadow-sm transition-shadow hover:shadow-md"
             >
-              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-amber-light">
-                <service.icon className="text-amber-dark" size={24} />
+              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-crimson-light">
+                <service.icon className="text-crimson-dark" size={24} />
               </div>
               <h3 className="mt-5 text-xl font-bold text-slate-900">
                 {service.title}

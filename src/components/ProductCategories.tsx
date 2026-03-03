@@ -34,7 +34,7 @@ export default function ProductCategories() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section header */}
         <div className="text-center">
-          <p className="text-sm font-semibold uppercase tracking-widest text-amber">
+          <p className="text-sm font-semibold uppercase tracking-widest text-crimson">
             Our Products
           </p>
           <h2 className="mt-2 text-3xl font-bold text-slate-900 md:text-4xl">
@@ -52,7 +52,6 @@ export default function ProductCategories() {
               <PlaceholderImage
                 label={product.imageLabel}
                 aspectRatio="3/2"
-                className="rounded-none border-0 border-b-2"
               />
               <div className="p-5">
                 <h3 className="text-lg font-bold text-slate-900">

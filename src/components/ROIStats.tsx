@@ -23,7 +23,7 @@ export default function ROIStats() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section header */}
         <div className="text-center">
-          <p className="text-sm font-semibold uppercase tracking-widest text-amber">
+          <p className="text-sm font-semibold uppercase tracking-widest text-crimson-bright">
             The Business Case
           </p>
           <h2 className="mt-2 text-3xl font-bold text-white md:text-4xl">
@@ -42,7 +42,7 @@ export default function ROIStats() {
                   : ""
               }`}
             >
-              <p className="text-4xl font-bold text-amber md:text-5xl">
+              <p className="text-4xl font-bold text-white md:text-5xl">
                 {stat.value}
               </p>
               <p className="mt-3 text-sm leading-relaxed text-white/70">

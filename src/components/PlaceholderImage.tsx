@@ -8,18 +8,20 @@ interface PlaceholderImageProps {
 
 export default function PlaceholderImage({
   label,
-  aspectRatio = "4/3",
+  aspectRatio = "16/9",
   className = "",
 }: PlaceholderImageProps) {
   return (
     <div
       role="img"
       aria-label={label}
-      className={`flex flex-col items-center justify-center gap-3 rounded-lg border-2 border-dashed border-slate-300 bg-gradient-to-br from-slate-100 to-slate-200 transition-colors hover:border-slate-400 ${className}`}
+      className={`flex flex-col items-center justify-center gap-3 bg-slate-200 ${className}`}
       style={{ aspectRatio }}
     >
-      <Camera className="text-slate-400" size={40} />
-      <span className="px-4 text-center text-sm text-slate-500">{label}</span>
+      <Camera className="text-slate-400" size={36} />
+      <span className="px-4 text-center text-sm font-medium text-slate-400">
+        {label}
+      </span>
     </div>
   );
 }

@@ -1,22 +1,30 @@
-import PlaceholderImage from "./PlaceholderImage";
+import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="bg-navy" aria-label="Hero">
-      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 md:py-24 lg:px-8">
-        <div className="grid items-center gap-10 lg:grid-cols-5 lg:gap-16">
-          {/* Text content - 60% */}
-          <div className="lg:col-span-3">
-            <p className="text-sm font-semibold uppercase tracking-widest text-amber">
-              Safety &amp; Loss Prevention Specialists
-            </p>
-            <h1 className="mt-4 text-4xl font-bold leading-tight text-white md:text-5xl lg:text-6xl">
+    <section className="relative" aria-label="Hero">
+      {/* Banner image */}
+      <div className="relative h-[500px] md:h-[600px] lg:h-[700px]">
+        <Image
+          src="/placeholder.jpg"
+          alt="Commercial entrance mat system installed in a modern building lobby"
+          fill
+          className="object-cover"
+          priority
+        />
+        {/* Dark overlay for text readability */}
+        <div className="absolute inset-0 bg-navy/70" />
+
+        {/* Text content over the banner */}
+        <div className="absolute inset-0 flex items-center">
+          <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+            <h1 className="max-w-3xl text-4xl font-bold leading-tight text-white md:text-5xl lg:text-6xl">
               Slip-and-Fall Incidents Cost Businesses{" "}
-              <span className="text-amber">$11 Billion</span> Annually.
+              <span className="text-crimson-bright">$11 Billion</span> Annually.
               <br />
               We Fix That.
             </h1>
-            <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/70 md:text-xl">
+            <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/80 md:text-xl">
               Professional floor matting distribution and loss prevention
               consulting that protects your people, your floors, and your bottom
               line.
@@ -26,7 +34,7 @@ export default function Hero() {
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center rounded-lg bg-amber px-7 py-3.5 text-base font-semibold text-navy transition-colors hover:bg-amber-dark"
+                className="inline-flex items-center justify-center rounded-lg bg-crimson px-7 py-3.5 text-base font-semibold text-white transition-colors hover:bg-crimson-dark"
               >
                 Request a Facility Assessment
               </a>
@@ -43,15 +51,6 @@ export default function Hero() {
               OSHA Compliant &nbsp;|&nbsp; NFSI Certified &nbsp;|&nbsp; 500+
               Facilities Served
             </p>
-          </div>
-
-          {/* Hero image placeholder - 40% */}
-          <div className="lg:col-span-2">
-            <PlaceholderImage
-              label="Entrance Mat System Installation"
-              aspectRatio="4/3"
-              className="shadow-2xl"
-            />
           </div>
         </div>
       </div>

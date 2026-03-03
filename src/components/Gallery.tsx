@@ -15,7 +15,7 @@ export default function Gallery() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section header */}
         <div className="text-center">
-          <p className="text-sm font-semibold uppercase tracking-widest text-amber">
+          <p className="text-sm font-semibold uppercase tracking-widest text-crimson">
             Our Work
           </p>
           <h2 className="mt-2 text-3xl font-bold text-slate-900 md:text-4xl">

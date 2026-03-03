@@ -48,7 +48,7 @@ export default function Navbar() {
           </a>
           <a
             href="#contact"
-            className="rounded-lg bg-amber px-5 py-2.5 text-sm font-semibold text-navy transition-colors hover:bg-amber-dark"
+            className="rounded-lg bg-crimson px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-crimson-dark"
           >
             Request a Facility Assessment
           </a>
@@ -89,7 +89,7 @@ export default function Navbar() {
             <a
               href="#contact"
               onClick={() => setMobileOpen(false)}
-              className="rounded-lg bg-amber px-5 py-2.5 text-center text-sm font-semibold text-navy transition-colors hover:bg-amber-dark"
+              className="rounded-lg bg-crimson px-5 py-2.5 text-center text-sm font-semibold text-white transition-colors hover:bg-crimson-dark"
             >
               Request a Facility Assessment
             </a>
