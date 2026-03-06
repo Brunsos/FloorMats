@@ -25,9 +25,9 @@ export default function Navbar() {
           <Image
             src="/kll-logo.png"
             alt="KLL Solutions"
-            width={140}
-            height={50}
-            className="h-10 w-auto"
+            width={180}
+            height={64}
+            className="h-14 w-auto"
           />
         </a>
 

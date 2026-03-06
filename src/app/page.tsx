@@ -4,6 +4,7 @@ import TrustBar from "@/components/TrustBar";
 import Services from "@/components/Services";
 import ProductCategories from "@/components/ProductCategories";
 import ROIStats from "@/components/ROIStats";
+import ROICalculator from "@/components/ROICalculator";
 import Gallery from "@/components/Gallery";
 import Industries from "@/components/Industries";
 import Testimonials from "@/components/Testimonials";
@@ -21,6 +22,7 @@ export default function Home() {
         <Services />
         <ProductCategories />
         <ROIStats />
+        <ROICalculator />
         <Gallery />
         <Industries />
         <Testimonials />

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ShieldCheck } from "./icons";
 
 const certifications = [
@@ -34,10 +35,21 @@ export default function About() {
         <div className="mt-12 grid items-start gap-12 lg:grid-cols-5">
           {/* Owner info */}
           <div className="lg:col-span-3">
-            <h3 className="text-2xl font-bold text-slate-900">Terry Young</h3>
-            <p className="mt-1 text-base font-medium text-crimson">
-              Founder, KLL Solutions
-            </p>
+            <div className="flex flex-col items-start gap-6 sm:flex-row sm:items-center">
+              <Image
+                src="/Terry.png"
+                alt="Terry Young, Founder of KLL Solutions"
+                width={120}
+                height={120}
+                className="h-28 w-28 rounded-full object-cover shadow-md"
+              />
+              <div>
+                <h3 className="text-2xl font-bold text-slate-900">Terry Young</h3>
+                <p className="mt-1 text-base font-medium text-crimson">
+                  Founder, KLL Solutions
+                </p>
+              </div>
+            </div>
 
             <p className="mt-6 leading-relaxed text-slate-600">
               KLL Solutions is led by Terry Young, a certified professional with
