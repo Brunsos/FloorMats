@@ -7,6 +7,7 @@ import ROIStats from "@/components/ROIStats";
 import Gallery from "@/components/Gallery";
 import Industries from "@/components/Industries";
 import Testimonials from "@/components/Testimonials";
+import About from "@/components/About";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 
@@ -23,6 +24,7 @@ export default function Home() {
         <Gallery />
         <Industries />
         <Testimonials />
+        <About />
         <CTASection />
       </main>
       <Footer />

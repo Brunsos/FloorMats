@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { Menu, X, Phone } from "./icons";
 
 const navLinks = [
@@ -20,8 +21,14 @@ export default function Navbar() {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
         {/* Logo */}
-        <a href="#" className="text-xl font-bold text-navy">
-          FloorMats
+        <a href="#">
+          <Image
+            src="/kll-logo.png"
+            alt="KLL Solutions"
+            width={140}
+            height={50}
+            className="h-10 w-auto"
+          />
         </a>
 
         {/* Desktop nav links */}

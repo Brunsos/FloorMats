@@ -23,7 +23,7 @@ export default function Footer() {
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div>
-            <h3 className="text-lg font-bold text-white">FloorMats</h3>
+            <h3 className="text-lg font-bold text-white">KLL Solutions</h3>
             <p className="mt-3 text-sm leading-relaxed text-slate-400">
               Professional floor matting distribution and loss prevention
               consulting. Protecting your people, your floors, and your bottom
@@ -86,11 +86,11 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="mailto:info@floormats.com"
+                  href="mailto:info@kllsolutions.com"
                   className="flex items-center gap-2 text-sm text-slate-400 transition-colors hover:text-white"
                 >
                   <Mail size={16} />
-                  info@floormats.com
+                  info@kllsolutions.com
                 </a>
               </li>
               <li>
@@ -106,7 +106,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 sm:flex-row">
           <p className="text-xs text-slate-500">
-            &copy; {new Date().getFullYear()} FloorMats. All rights reserved.
+            &copy; {new Date().getFullYear()} KLL Solutions. All rights reserved.
           </p>
           <div className="flex gap-6">
             <a

@@ -19,7 +19,7 @@ const stats = [
 
 export default function ROIStats() {
   return (
-    <section id="about" className="bg-navy py-16 md:py-24" aria-label="ROI statistics">
+    <section className="bg-navy py-16 md:py-24" aria-label="ROI statistics">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section header */}
         <div className="text-center">
